@@ -21,9 +21,9 @@ A maneira mais simples de rodar o SQL Server localmente é usando Docker.
 
 1.  **Instale uma Ferramenta de Gerenciamento de BD:** Baixe e instale uma ferramenta como o [Azure Data Studio](https://learn.microsoft.com/sql/azure-data-studio/download-azure-data-studio) ou [DBeaver](https://dbeaver.io/download/).
 2.  **Conecte-se ao Banco de Dados:** Use as seguintes credenciais na sua ferramenta:
-    *   **Servidor:** `localhost`
-    *   **Login/Usuário:** `sa`
-    *   **Senha:** A senha que você definiu no passo anterior (ex: `SuaSenhaForte#2024`).
+    - **Servidor:** `localhost`
+    - **Login/Usuário:** `sa`
+    - **Senha:** A senha que você definiu no passo anterior (ex: `SuaSenhaForte#2024`).
 3.  **Crie a Base de Dados:** Após conectar, execute o seguinte comando SQL:
 
     ```sql
@@ -33,6 +33,7 @@ A maneira mais simples de rodar o SQL Server localmente é usando Docker.
 4.  **Crie as Tabelas:** Certifique-se de que você está no contexto do banco `SolveItDB` e execute os scripts SQL abaixo, um de cada vez, na ordem correta.
 
     **Tabela `Empresa`:**
+
     ```sql
     CREATE TABLE Empresa (
         id_empresa INT PRIMARY KEY IDENTITY(1,1),
@@ -42,6 +43,7 @@ A maneira mais simples de rodar o SQL Server localmente é usando Docker.
     ```
 
     **Tabela `TipoAcesso`:**
+
     ```sql
     CREATE TABLE TipoAcesso (
         id_tipo_acesso INT PRIMARY KEY IDENTITY(1,1),
@@ -50,6 +52,7 @@ A maneira mais simples de rodar o SQL Server localmente é usando Docker.
     ```
 
     **Tabela `Usuarios`:**
+
     ```sql
     CREATE TABLE Usuarios (
         id_usuario INT PRIMARY KEY IDENTITY(1,1),
@@ -69,6 +72,7 @@ A maneira mais simples de rodar o SQL Server localmente é usando Docker.
     ```
 
     **Tabela `Chamados`:**
+
     ```sql
     CREATE TABLE Chamados (
         id_chamado INT PRIMARY KEY IDENTITY(1,1),
@@ -118,7 +122,8 @@ O Gradle precisa saber onde encontrar o JDK para compilar o projeto. A forma mai
     ```properties
     org.gradle.java.home=C:/Program Files/Java/jdk-21
     ```
-    *Nota: O uso de barras normais (`/`) é intencional e mais seguro para arquivos de configuração.*
+
+    _Nota: O uso de barras normais (`/`) é intencional e mais seguro para arquivos de configuração._
 
 ### 2.3. Tornar o Backend Executável
 
