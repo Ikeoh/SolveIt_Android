@@ -1,6 +1,13 @@
 plugins {
     id 'java-library'
+    id 'application' // Adiciona o plugin de aplicação
 }
+
+// Define a classe principal para o plugin 'application'
+application {
+    mainClass = 'com.example.solveit_backend.ServerMain'
+}
+
 
 java {
     // CORREÇÃO: Usando o Java 21 LTS que você instalou (é o ideal para o back-end)

@@ -23,7 +23,7 @@ public class DatabaseConfig {
     }
 
     public static String getDbUsername() {
-        return properties.getProperty("db.username");
+        return properties.getProperty("db.user");
     }
 
     public static String getDbPassword() {
